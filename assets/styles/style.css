@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #fdb813;
+}
+
+footer {
+  padding: 30px;
+  color: white;
+  background-color: #fdb813;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  max-width: 200px;
+}
+
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+  margin-top: 20px;
+} */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #fff;
+  text-align: center;
+  color: rgb(7, 7, 7);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px 30px;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid #fdb813;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fdb813; 
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none; 
+  color: #333; 
+  font-size: 18px; 
+  transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+  color: rgb(67, 94, 190); 
+}
+
+.hire-me-btn {
+  background-color: #fdb813; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 18px; 
+  transition: background-color 0.3s; 
+}
+
+.hire-me-btn:hover {
+  background-color: white; 
+  color: #fdb813; 
+  border: 1px solid #fdb813;
+
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slidesshow1, .slidesshow2 {
+  display: flex;
+
+}
+
+.prev, .next {
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: #717171;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.arrow {
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: #717171;
+  font-weight: bold;
+  font-size: 22px;
+  transition: background-color 0.5s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.arrow.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.rectangle {
+  cursor: pointer;
+  height: 6px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.rectangle.active, .rectangle:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fadeEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav .menu-toggle {
+    display: block;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portofolio - Rivonny Wulandari</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-header">
+          <h1>Rivonny</h1>
+          <div class="menu-toggle" onclick="togglemenunavbar()">☰</div>
+        </div>
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#myproject">My Project</a></li>
+          <li><a href="https://www.linkedin.com/in/rivonnywulandari/" class="hire-me-btn" target="_blank">Hire Me</a></li>
+        </ul>
+      </nav>
+      
+
+      <div class="jumbotron">
+        <h1>Rivonny Wulandari</h1>
+        <p>Final Year Information System Student | Web & App Developer</p><br>
+        <a
+              href="assets/files/cv_rivonnywulandari.pdf"
+              download
+              class="hire-me-btn"
+              target="_blank"
+              >Download CV</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="aboutme" class="card">
+          <h2>About Me</h2>
+          
+          <p>
+            Hello! I am Rivonny Wulandari, a current senior majoring in Information System, Faculty of
+            Information Technology at Universitas Andalas. I recently finished
+            interning at Department of Communication, Information Technology,
+            and Statistics of West Sumatra (Diskominfotik Sumbar) under the
+            division of application for 3 months. My fields of interest include
+            Web Application, Mobile Application, and UI/UX Design.
+          </p>
+          
+        </article>
+
+        <article id="experience" class="card">
+          <h2>Experience</h2>
+
+          <h4>Dinas Komunikasi, Informatika, dan Statistik Sumatera Barat</h4>
+          <h4>Web Developer</h4>
+          <h4>January 2022 - March 2022</h4>
+          
+          <p>
+            As an intern of The Application Division, I analyze and discussed with programmers to create website interface of the People's Representative Council of West Sumatera Province (DPRD Sumatera Barat), work with programmer to manage the database design of the DPRD Sumatera Barat, and complete codes of DPRD Sumatera Barat website with PHP and CodeIgniter Framework.
+          </p>
+         
+        </article>
+
+        <article id="myproject" class="card">
+          <h2>My Project</h2>
+          <p>
+            Here are my IT projects that I have done
+          </p>
+
+          <section>
+            <h3>UI/UX Design of Cafe Wellgrown </h3>
+            <h4>September, 2023</h4>
+            <div class="slideshow-container" id="slider1">
+                <div class="slides slidesshow1 fade">
+                    <img src="assets/image/wellgrown1.png" style="width:100%">
+                </div>
+        
+                <div class="slides slidesshow1 fade">
+                    <img src="assets/image/wellgrown2.png" style="width:100%">
+                </div>
+        
+                <div class="slides slidesshow1 fade">
+                    <img src="assets/image/wellgrown3.png" style="width:100%">
+                </div>
+        
+                <a class="prev" onclick="geserslides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 0)">&#10095;</a>
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="rectangle rectangle1" onclick="slidessaatini(1, 0)"></span> 
+                <span class="rectangle rectangle1" onclick="slidessaatini(2, 0)"></span> 
+                <span class="rectangle rectangle1" onclick="slidessaatini(3, 0)"></span> 
+            </div>            
+        
+            <p>
+                UI/UX Design of Cafe Wellgrown Application is a design for an application that is used to order dishes and drinks for its customers through a mobile app. In addition to creating Lo-Fi and Hi-Fi designs, mockup testing was also carried out to find out if this application design is quickly understood and easy to use by users.
+            </p>
+            <a href="https://www.figma.com/design/0lyapjruUR42nPYN0IAhQu/UI%2FUX-Cafe-Wellgrown?node-id=0-1&t=TEa4xtkSAWxpKwwo-1" target="_blank">Explore this project</a>
+        </section>
+        
+        <section>
+            <h3>Website Desa Wisata Kampuang Minang Nagari Sumpu</h3>
+            <h4>March, 2024</h4>
+            <div class="slideshow-container" id="slider2">
+                <div class="slides slidesshow2 fade">
+                    <img src="assets/image/sumpu1.png" style="width:100%">
+                </div>
+        
+                <div class="slides slidesshow2 fade">
+                    <img src="assets/image/sumpu2.png" style="width:100%">
+                </div>
+        
+                <div class="slides slidesshow2 fade">
+                    <img src="assets/image/sumpu3.png" style="width:100%">
+                </div>
+        
+                <a class="prev" onclick="geserslides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="rectangle rectangle2" onclick="slidessaatini(1, 1)"></span> 
+                <span class="rectangle rectangle2" onclick="slidessaatini(2, 1)"></span> 
+                <span class="rectangle rectangle2" onclick="slidessaatini(3, 1)"></span> 
+            </div>    
+        
+            <p>Kampuang Minang Nagari Sumpu Tourism Village Website is a geographic information system website that displays information on tourist attractions, tour packages, and homestays, complete with spatial features such as routes and geolocation, and users can also make reservations for tour packages and homestays on this website.
+            </p>
+            <a href="https://wisatasumpu.cloud/web" target="_blank">Explore this project</a>
+        </section>
+          <script src="assets/js/script.js"></script>
+
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Get To Know Me</h2>
+            <figure>
+              <img src="assets/image/rivonny.jpg" />
+              <figcaption>Rivonny Wulandari</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3>My Skills</h3>
+            <h4>Programming Language</h4>
+            <ul>
+              <li>PHP (Intermediate)</a></li>
+              <li>Javascript (Intermediate)</a></li>
+              <li>SQL (Intermediate)</a></li>              
+              <li>Java (Beginner)</a></li>              
+              <li>Phyton (Beginner)</a></li>              
+              <li>C++ (Beginner)</a></li>              
+            </ul>
+            <h4>Framework</h4>
+            <ul>
+              <li>CodeIgniter (Intermediate)</a></li>
+              <li>Laravel (Intermediate)</a></li>                          
+              <li>Flutter (Beginner)</a></li>                          
+            </ul>
+            <h4>Database</h4>
+            <ul>
+              <li>MySQL (Intermediate)</a></li>
+              <li>PostgreSQL (Intermediate)</a></li>                          
+              <li>Oracle (Beginner)</a></li>                          
+            </ul>
+          </section>
+        </article>
+      </aside>
+
+    </main>
+
+    <footer>
+      <p>Padang, Sumatera Barat, Indonesia</p>
+      <p>+62 895 6348 64912</p>
+      <p>rivonnywulandari19@gmail.com</p><br>
+      <hr>
+      <p>2024 &#169; Rivonny Wulandari </p>
+    </footer>
+  </body>
+
+</html>
