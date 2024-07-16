@@ -11,13 +11,13 @@ body {
 
 h2,
 h3 {
-  color: #fdb813;
+  color: #2d3e50;
 }
 
 footer {
   padding: 30px;
   color: white;
-  background-color: #fdb813;
+  background-color: #2d3e50;
   text-align: left;
   font-weight: bold;
 }
@@ -48,7 +48,7 @@ footer {
 } */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 20px;
 }
 
@@ -67,13 +67,13 @@ nav {
   padding: 20px 30px;
   background-color: #fff; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  border-bottom: 1px solid #fdb813;
+  border-bottom: 1px solid #2d3e50;
 }
 
 nav h1 {
   margin: 0;
   font-size: 24px;
-  color: #fdb813; 
+  color: #2d3e50; 
 }
 
 nav ul {
@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .hire-me-btn {
-  background-color: #fdb813; 
+  background-color: #2d3e50; 
   color: white; 
   padding: 10px 20px; 
   border: none; 
@@ -115,8 +115,8 @@ nav ul li a:hover {
 
 .hire-me-btn:hover {
   background-color: white; 
-  color: #fdb813; 
-  border: 1px solid #fdb813;
+  color: #2d3e50; 
+  border: 1px solid #2d3e50;
 
 }
 
