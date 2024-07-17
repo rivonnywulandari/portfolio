@@ -1,8 +1,9 @@
-let indexslide = [1, 1];
-let idslide = ["slidesshow1", "slidesshow2"];
+let indexslide = [1, 1, 1];
+let idslide = ["slidesshow1", "slidesshow2", "slidesshow3"];
 
 tampilkanslides(1, 0);
 tampilkanslides(1, 1);
+tampilkanslides(1, 2);
 
 function geserslides(n, no) {
   tampilkanslides((indexslide[no] += n), no);
