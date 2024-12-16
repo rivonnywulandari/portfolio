@@ -105,6 +105,8 @@ nav ul li a:hover {
   text-decoration: none; 
   font-size: 18px; 
   transition: background-color 0.3s; 
+  border: 0.3px solid #2d3e50;
+
 }
 
 .hire-me-btn:hover {
@@ -135,6 +137,23 @@ header {
   display: inline;
 }
 
+.badge {
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.6em ;
+  padding-left: 0.6em;
+  padding-bottom: 0.3em;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: white;
+  background-color: #2d3e50; /* Warna biru */
+  border-radius: 10rem;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  border: 0.3px solid #2d3e50;
+  cursor: pointer;
+
+}
 
 .slideshow-container {
   max-width: 1000px;
