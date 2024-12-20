@@ -1,10 +1,17 @@
-let indexslide = [1, 1, 1, 1];
-let idslide = ["slidesshow1", "slidesshow2", "slidesshow3", "slidesshow4"];
+let indexslide = [1, 1, 1, 1, 1];
+let idslide = [
+  "slidesshow0", 
+  "slidesshow1", 
+  "slidesshow2", 
+  "slidesshow3",
+  "slidesshow4",
+];
 
 tampilkanslides(1, 0);
 tampilkanslides(1, 1);
 tampilkanslides(1, 2);
 tampilkanslides(1, 3);
+tampilkanslides(1, 4);
 
 function geserslides(n, no) {
   tampilkanslides((indexslide[no] += n), no);
@@ -17,7 +24,7 @@ function slidessaatini(n, no) {
 function tampilkanslides(n, no) {
   let i;
   let slides = document.getElementsByClassName(idslide[no]);
-  let rectangles = document.getElementsByClassName("rectangle" + (no + 1));
+  let rectangles = document.getElementsByClassName("rectangle" + (no));
   if (n > slides.length) {
     indexslide[no] = 1;
   }
