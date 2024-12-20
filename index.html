@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body>
@@ -64,10 +65,49 @@
         </article>
 
         <article id="myproject" class="card">
-          <h2>My Projects</h2>
-                          
+          <h2>My Projects</h2> 
+          
           <section>
-            <h3>MBTI Personality App</h3>
+            <h3>Secret Origami Web App</h3>
+            <h4>December, 2024</h4>
+            <div class="project-container">
+              <div class="slideshow-container" id="slider4">
+                <div class="slides slidesshow4 fade">
+                  <img src="assets/image/ori1.png" style="width:100%">
+                </div>
+                <div class="slides slidesshow4 fade">
+                  <img src="assets/image/ori2.png" style="width:100%">
+                </div>
+                <div class="slides slidesshow4 fade">
+                  <img src="assets/image/ori3.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="geserslides(-1, 4)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 4)">&#10095;</a>
+                <div style="text-align:center; margin-top: 10px;">
+                  <span class="rectangle rectangle4" onclick="slidessaatini(1, 4)"></span>
+                  <span class="rectangle rectangle4" onclick="slidessaatini(2, 4)"></span>
+                  <span class="rectangle rectangle4" onclick="slidessaatini(3, 4)"></span>
+                </div>
+              </div>
+              <br>
+              <div class="project-details">                
+                <p>Inspired by the desire to bring back the art of heartfelt communication, I developed a simple yet meaningful web application called Secret Origami using React. This static web app allows users to submit personal letters, archive, delete, and search some specific letters. The intuitive and clean interface ensures that users can focus on crafting and managing their letters, reviving the beauty of secret messages in a modern digital form.</p>
+                <p> 
+                  <span class="badge">JavaScript</span> 
+                  <span class="badge">React</span>
+                  <span class="badge">Vite</span>
+                  <span class="badge">Github Pages</span>
+                </p>
+                <p><i class="fa-solid fa-link"></i>
+                  <a href="https://rivonnywulandari.github.io/secret-origami" target="_blank" style="color:black">rivonnywulandari.github.io/secret-origami</a>
+                </p>
+              </div>
+            </div>
+            <br>
+          </section>
+
+          <section>
+            <h3>MBTI Personality Android App</h3>
             <h4>July, 2024</h4>
             <div class="project-container">
               <div class="slideshow-container" id="slider3">
@@ -80,12 +120,12 @@
                 <div class="slides slidesshow3 fade">
                   <img src="assets/image/mbti3.jpg" style="width:100%">
                 </div>
-                <a class="prev" onclick="geserslides(-1, 2)">&#10094;</a>
-                <a class="next" onclick="geserslides(1, 2)">&#10095;</a>
+                <a class="prev" onclick="geserslides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 3)">&#10095;</a>
                 <div style="text-align:center; margin-top: 10px;">
-                  <span class="rectangle rectangle3" onclick="slidessaatini(1, 2)"></span>
-                  <span class="rectangle rectangle3" onclick="slidessaatini(2, 2)"></span>
-                  <span class="rectangle rectangle3" onclick="slidessaatini(3, 2)"></span>
+                  <span class="rectangle rectangle3" onclick="slidessaatini(1, 3)"></span>
+                  <span class="rectangle rectangle3" onclick="slidessaatini(2, 3)"></span>
+                  <span class="rectangle rectangle3" onclick="slidessaatini(3, 3)"></span>
                 </div>
               </div>
               <br>
@@ -95,7 +135,7 @@
                   <span class="badge">Kotlin</span> 
                   <span class="badge">Android Studio</span>
                 </p>
-                <p>Link:
+                <p><i class="fa-solid fa-link"></i>
                   <a href="https://github.com/rivonnywulandari/MbtiPersonalityTypes" target="_blank" style="color:black">MBTI Personality App Repository</a>
                 </p>
               </div>
@@ -104,8 +144,8 @@
           </section>
 
           <section>
-            <h3>Website Desa Wisata Kampuang Minang Nagari Sumpu</h3>
-            <h4>March, 2024</h4>
+            <h3>Sumpu Tourism Village Web App & Mobile</h3>
+            <h4>May, 2024</h4>
             <div class="project-container">
               <div class="slideshow-container" id="slider2">
                 <div class="slides slidesshow2 fade">
@@ -117,12 +157,12 @@
                 <div class="slides slidesshow2 fade">
                   <img src="assets/image/sumpu3.png" style="width:100%">
                 </div>
-                <a class="prev" onclick="geserslides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="geserslides(1, 1)">&#10095;</a>
+                <a class="prev" onclick="geserslides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 2)">&#10095;</a>
                 <div style="text-align:center; margin-top: 10px;">
-                  <span class="rectangle rectangle2" onclick="slidessaatini(1, 1)"></span>
-                  <span class="rectangle rectangle2" onclick="slidessaatini(2, 1)"></span>
-                  <span class="rectangle rectangle2" onclick="slidessaatini(3, 1)"></span>
+                  <span class="rectangle rectangle2" onclick="slidessaatini(1, 2)"></span>
+                  <span class="rectangle rectangle2" onclick="slidessaatini(2, 2)"></span>
+                  <span class="rectangle rectangle2" onclick="slidessaatini(3, 2)"></span>
                 </div>
               </div>
               <br>
@@ -137,8 +177,11 @@
                   <span class="badge">OpenWeatherMap API</span>
                   <span class="badge">Midtrans</span>
                   <span class="badge">Gmail SMTP</span>
+                  <span class="badge">Figma</span>
+                  <span class="badge">cPanel</span>
+                  <span class="badge">Basic4Android</span>
                 </p> 
-                <p>Link:
+                <p><i class="fa-solid fa-link"></i>
                   <a href="https://wisatasumpu.infinityfreeapp.com/web" target="_blank" style="color:black">wisatasumpu.infinityfreeapp.com</a>
                 </p>
               </div>
@@ -147,25 +190,25 @@
           </section>
           
           <section>
-            <h3>Website Peta Digital Interaktif Universitas Andalas</h3>
+            <h3>Universitas Andalas Interactive Digital Map Web App</h3>
             <h4>Nov, 2023</h4>
             <div class="project-container">
-              <div class="slideshow-container" id="slider4">
-                <div class="slides slidesshow4 fade">
+              <div class="slideshow-container" id="slider1">
+                <div class="slides slidesshow1 fade">
                   <img src="assets/image/map1.png" style="width:100%">
                 </div>
-                <div class="slides slidesshow4 fade">
+                <div class="slides slidesshow1 fade">
                   <img src="assets/image/map2.png" style="width:100%">
                 </div>
-                <div class="slides slidesshow4 fade">
+                <div class="slides slidesshow1 fade">
                   <img src="assets/image/map3.png" style="width:100%">
                 </div>
-                <a class="prev" onclick="geserslides(-1, 3)">&#10094;</a>
-                <a class="next" onclick="geserslides(1, 3)">&#10095;</a>
+                <a class="prev" onclick="geserslides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="geserslides(1, 1)">&#10095;</a>
                 <div style="text-align:center; margin-top: 10px;">
-                  <span class="rectangle rectangle4" onclick="slidessaatini(1, 3)"></span>
-                  <span class="rectangle rectangle4" onclick="slidessaatini(2, 3)"></span>
-                  <span class="rectangle rectangle4" onclick="slidessaatini(3, 3)"></span>
+                  <span class="rectangle rectangle1" onclick="slidessaatini(1, 1)"></span>
+                  <span class="rectangle rectangle1" onclick="slidessaatini(2, 1)"></span>
+                  <span class="rectangle rectangle1" onclick="slidessaatini(3, 1)"></span>
                 </div>
               </div>
               <br>
@@ -178,8 +221,9 @@
                   <span class="badge">MySQL</span>
                   <span class="badge">OpenStreetMap API</span>
                   <span class="badge">OpenRouteService API</span>
-                </p>
-                <p>Link:
+                  <span class="badge">Figma</span>
+                  <span class="badge">Webmin</span></p>
+                <p><i class="fa-solid fa-link"></i>
                   <a href="http://map.unand.ac.id/" target="_blank" style="color:black">map.unand.ac.id</a>
                 </p>
               </div>
@@ -191,22 +235,22 @@
             <h3>UI/UX Design of Cafe Wellgrown </h3>
             <h4>September, 2023</h4>
             <div class="project-container">
-              <div class="slideshow-container" id="slider1">
-                <div class="slides slidesshow1 fade">
+              <div class="slideshow-container" id="slider0">
+                <div class="slides slidesshow0 fade">
                   <img src="assets/image/wellgrown1.png" style="width:100%">
                 </div>
-                <div class="slides slidesshow1 fade">
+                <div class="slides slidesshow0 fade">
                   <img src="assets/image/wellgrown2.png" style="width:100%">
                 </div>
-                <div class="slides slidesshow1 fade">
+                <div class="slides slidesshow0 fade">
                   <img src="assets/image/wellgrown3.png" style="width:100%">
                 </div>
                 <a class="prev" onclick="geserslides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="geserslides(1, 0)">&#10095;</a>
                 <div style="text-align:center; margin-top: 10px;">
-                  <span class="rectangle rectangle1" onclick="slidessaatini(1, 0)"></span>
-                  <span class="rectangle rectangle1" onclick="slidessaatini(2, 0)"></span>
-                  <span class="rectangle rectangle1" onclick="slidessaatini(3, 0)"></span>
+                  <span class="rectangle rectangle0" onclick="slidessaatini(1, 0)"></span>
+                  <span class="rectangle rectangle0" onclick="slidessaatini(2, 0)"></span>
+                  <span class="rectangle rectangle0" onclick="slidessaatini(3, 0)"></span>
                 </div>
               </div>
               <br>
@@ -216,7 +260,7 @@
                   <span class="badge">Figma</span> 
                   <span class="badge">Maze</span>
                 </p> 
-                <p>Link:
+                <p><i class="fa-solid fa-link"></i>
                   <a href="https://www.figma.com/design/0lyapjruUR42nPYN0IAhQu/UI%2FUX-Cafe-Wellgrown?node-id=0-1&t=TEa4xtkSAWxpKwwo-1" target="_blank" style="color:black">Figma Cafe Wellgrown</a>
                 </p>
               </div>
@@ -245,7 +289,7 @@
             <h4>Programming Language</h4>
             <ul>
               <li>PHP (Intermediate)</a></li>
-              <li>Javascript (Intermediate)</a></li>
+              <li>JavaScript (Intermediate)</a></li>
               <li>SQL (Intermediate)</a></li>
               <li>Kotlin (Beginner)</a></li>  
               <li>Java (Beginner)</a></li>              
@@ -255,6 +299,7 @@
             <ul>
               <li>CodeIgniter (Intermediate)</a></li>
               <li>Laravel (Intermediate)</a></li>                          
+              <li>React (Beginner)</a></li>                          
               <li>Flutter (Beginner)</a></li>                          
             </ul>
             <h4>Database</h4>
