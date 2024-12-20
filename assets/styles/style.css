@@ -314,9 +314,11 @@ header {
   max-width: 40%;
 }
 
+
 .slideshow-container img {
   width: 100%;
   height: auto;
+  border: 1px solid #d9d9d9;
 }
 
 @media (max-width: 768px) {
