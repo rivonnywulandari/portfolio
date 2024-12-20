@@ -92,7 +92,7 @@ footer {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  /* align-items: center;  */
   padding: 20px 30px;
   background-color: #fff; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -103,6 +103,7 @@ nav h1 {
   margin: 0;
   font-size: 24px;
   color: #2d3e50; 
+  flex: 1;
 }
 
 nav ul {
@@ -171,6 +172,11 @@ aside {
 
 header {
   display: inline;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
 }
 
 .badge {
@@ -281,7 +287,8 @@ header {
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: stretch;
   }
 
   nav h1 {
@@ -297,6 +304,7 @@ header {
 
   nav ul.show {
     display: flex;
+    place-items: flex-end;
   }
 
   nav li {
@@ -306,7 +314,9 @@ header {
   nav .menu-toggle {
     display: block;
     cursor: pointer;
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    /* width: 250px; */
+    text-align-last: right;
   }
 
   main {
@@ -321,6 +331,8 @@ header {
 @media screen and (min-width: 769px) {
   nav .menu-toggle {
     display: none;
+
+    
   }
 }
 
