@@ -42,7 +42,7 @@
     <main>
       <div id="content">
         <article id="aboutme" class="card">
-          <h2>About Me</h2>
+          <h2>About</h2>
           
           <p>
             Hello everyone! I'm Rivonny Wulandari, a current senior majoring in Information Systems at Universitas Andalas. I completed internship at Department of Communication, Information Technology, and Statistics of West Sumatra (Diskominfotik Sumbar) under the Division of Application for 3 months. My areas of interest include web application, mobile application, and UI/UX design.
@@ -224,7 +224,7 @@
                   <span class="badge">Figma</span>
                   <span class="badge">Webmin</span></p>
                 <p><i class="fa-solid fa-link"></i>
-                  <a href="http://map.unand.ac.id/" target="_blank" style="color:black">map.unand.ac.id</a>
+                  <a href="https://map.unand.ac.id/" target="_blank" style="color:black">map.unand.ac.id</a>
                 </p>
               </div>
             </div>
@@ -279,7 +279,7 @@
           <header>
             <h2>Get To Know Me</h2>
             <figure>
-              <img src="assets/image/rivonny3.png" />
+              <img src="assets/image/rivonny5.png" />
               <figcaption>Rivonny Wulandari</figcaption>
             </figure>
           </header>
@@ -310,16 +310,47 @@
             </ul>
           </section>
         </article>
+     
+
+      
+        <br>
+        <article class="profile card">
+          <header>
+            <h2 style="margin-bottom: 2rem;">Reach Me</h2>            
+          </header>
+
+          <section>
+           
+            <p>
+              <i class="icon-contact-me gmail"></i><a style="cursor:pointer;color:black" href="mailto:rivonnywulandari@gmail.com">rivonnywulandari@gmail.com</a> 
+            </p>
+            <p>
+              <i class="icon-contact-me linkedin"></i><a href="https://www.linkedin.com/in/rivonnywulandari/" target="_blank" style="color:black">Rivonny Wulandari</a> 
+            </p>
+            <p>
+              <i class="icon-contact-me github"></i><a href="https://www.github.com/rivonnywulandari" target="_blank" style="color:black">rivonnywulandari</a> 
+            </p>            
+            <p>
+              <i class="icon-contact-me twitter"></i><a href="https://www.x.com/vonny_wd" target="_blank" style="color:black">@vonny_wd</a> 
+            </p>
+                        
+          </section>
+        </article>
+     
       </aside>
 
     </main>
 
-    <footer>
-      <p>Padang, Indonesia</p>
-      <a style="cursor:pointer;color:white" href="mailto:rivonnywulandari@gmail.com">rivonnywulandari@gmail.com</a><br><br>
-      <hr>
-      <p>2024 &#169; Rivonny Wulandari </p>
+    <footer>    
+      <p id="footer-year">&#169; Rivonny Wulandari</p>
     </footer>
   </body>
+
+  <script>
+    const footerYear = document.getElementById('footer-year');  
+    const currentYear = new Date().getFullYear();  
+    footerYear.innerHTML = `${currentYear} &#169; Rivonny Wulandari`;
+  </script>
+
 
 </html>
